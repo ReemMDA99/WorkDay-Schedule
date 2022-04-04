@@ -2,7 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     line-height: 1;
-    background-color: rgb(249, 255, 208);
+    background-color: rgb(243, 252, 186);
 }
 textarea {
     background :transparent;
@@ -72,7 +72,21 @@ textarea {
     background-color: #ffc569;
     color: rgb(0, 0, 0);
 }
-.deleteBtn svg:hover {
+.deleteBtn d:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+}
+.past {
+    background-color: rgb(255, 198, 233);
+    color: white;
+}
+  
+.present {
+    background-color: yellowgreen;
+    color: white;
+}
+  
+.future {
+    background-color: hsl(192, 61%, 75%);
+    color: white;
 }
