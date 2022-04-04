@@ -31,7 +31,16 @@ var showTime = function() {
 };
 console.log(showTime);
 // Create a variable to local storage the data
+var storeEvents = function(event) {
+var hour = event.target.parentNode.children[0].textContent;
+
+var events = event.target.parentNode.children[1].value;
+localStorage.setItem(hour, events);
+
+};
+
 
 //Create variable to save and delete functions
-
+var storeBtnEl = document.querySelectorAll(".storeBtn");
+var deleteBtnEl = document.querySelectorAll(".deleteBtn");
 //add event listener to call the save and delete upon click
