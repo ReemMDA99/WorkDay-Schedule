@@ -7,24 +7,29 @@ var eventEl = document.querySelector(".event");
 
 //Create variables to store current date and time using moment.js
 var currentDayEl = document.querySelector("#currentDay");
-var currentHour = (moment().format);
+var currentHour = (moment().format('LLLL'));
 console.log(currentHour);
 
 //Create variables to show current date and time using moment.js
 var showDay = function () {
-var today = moment().format("dddd MMMM Do  YYYY, h a");
+var today = moment().format('MMMM Do YYYY, h:mm:ss a');
 currentDayEl.innerHTML = today;
 };
 showDay();
 
 //Display current time
-var showTime = function () {
+var showTime = function() {
     for (var counter=0; counter < timeBlock.length; counter++) {
         if (currentHour > timeBlock[counter]) {
-
+        eventEl[counter].classList.add("past");
+        } else if  (currentHour < timeBlock[counter]) {
+            eventEl[counter].classList.add("future");
+        } else {
+            eventEl[counter].classList.add("present");
         }
     }
-}
+};
+console.log(showTime);
 // Create a variable to local storage the data
 
 //Create variable to save and delete functions
