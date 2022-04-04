@@ -1,0 +1,78 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    background-color: rgb(249, 255, 208);
+}
+textarea {
+    background :transparent;
+    font-family:'Times New Roman', Times, serif;
+    border: 0.5px dotted rgb(2, 2, 81);
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 5px;
+
+}
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;    
+}
+.col-8 {
+    background-color: #dbffa4;
+}
+.description {
+    white-space: pre-wrap;
+}
+.work-hour {
+    text-align :center;
+    border-radius: 15px;
+    color:#000000;
+    font-size:20px;
+    padding: 20px;
+    border: 2px dotted black;
+    background-color: #cfff85;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+}
+.hour {
+    background-color:rgb(166, 207, 205);
+    color: #000000;
+    border-top: 2px dashed #000000;
+    padding-top: 15px;
+    font-size: 25px;
+    font-style: bold;
+    border-radius: 15px;
+}
+
+.storeBtn {
+    border-left: 1px solid black;
+    border-radius: 15px;
+    background-color: #8be6fa;
+    color: rgb(0, 0, 0);
+}
+  
+.storeBtn d:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.deleteBtn {
+    border-left: 1px solid black;
+    border-radius:15px;
+    background-color: #ffc569;
+    color: rgb(0, 0, 0);
+}
+.deleteBtn svg:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
