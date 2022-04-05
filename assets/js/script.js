@@ -34,9 +34,14 @@ showTime();
 // Create a variable to set item in local storage
 var storeEvents = function(event) {
 var hours = event.target.parentNode.children[0].textContent;
-
 var events = event.target.parentNode.children[1].value;
 localStorage.setItem(hours, events);
+};
+
+var removeEvents = function(event) {
+var hours = event.target.parentNode.children[0].textContent;
+var events = event.target.parentNode.children[0].value;
+    localStorage.removeItem(hours, events);
 };
 // Create a variable to get item from local storage
 
@@ -53,10 +58,17 @@ getTask();
 var storeBtnEl = document.querySelectorAll(".storeBtn");
 var deleteBtnEl = document.querySelectorAll(".deleteBtn");
 
-//add event listener to call the save and delete upon click
-var clickEvents = function() {
+//add event listener to call the save upon click
+var clickSaveEvents = function() {
     for (var counter = 0; counter < storeBtnEl.length; counter++) {
-    storeBtnEl[counter].addEventListener("click", storeEvents);
+    storeBtnEl[counter].addEventListener("click", storeEvents)
     }
 };
-clickEvents();
+clickSaveEvents();
+    
+var clickRemoveEvents= function() {
+    for(var counter=0; counter< deleteBtnEl.length; counter++) {
+        deleteBtnEl[counter].addEventListener("click", removeEvents)
+    }
+};
+clickRemoveEvents();
