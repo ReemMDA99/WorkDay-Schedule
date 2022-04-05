@@ -41,7 +41,7 @@ localStorage.setItem(hours, events);
 var removeEvents = function(event) {
 var hours = event.target.parentNode.children[0].textContent;
 var events = event.target.parentNode.children[0].value;
-    localStorage.removeItem(hours, events);
+    windows.localStorage.removeItem(hours, events);
 };
 // Create a variable to get item from local storage
 
