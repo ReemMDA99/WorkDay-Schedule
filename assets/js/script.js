@@ -1,5 +1,3 @@
-var currentDayEl = document.querySelector("#currentDay");
-
 //Estimate working hours 9am-5pm
 var timeBlock = [9, 10, 11, 12, 1, 2, 3, 4, 5];
 
@@ -8,9 +6,9 @@ var taskContainerEl =document.querySelector(".container");
 var eventsEl = document.querySelectorAll(".events");
 
 //Create variables to store current date and time using moment.js
-var currentHour = (moment().format('LLLL'));
+var currentHour = Number(moment().format("H"));
 
-
+var currentDayEl = document.querySelector("#currentDay");
 //Create variables to show current date and time using moment.js
 var showDay = function () {
 var today = moment().format('MMMM Do YYYY, h:mm:ss a');
