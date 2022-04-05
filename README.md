@@ -1,4 +1,4 @@
-# MY SCHEDULEMAKER
+# Work Day Schedule Maker by Reem
 Weekly challenge 5
 
 # Challenge:
@@ -33,6 +33,7 @@ WHEN I refresh the page
 THEN the saved events persist
 
 # Screenshot
+![Picture1](https://user-images.githubusercontent.com/94458512/161773902-894089ba-25c6-4571-9a52-9776f9aab0d5.png)
 
 
 # Links:
